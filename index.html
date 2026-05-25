@@ -7,7 +7,6 @@
     <!-- Підключення Tailwind CSS для стилізації -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Додаткові базові стилі для кращої типографіки */
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
 </head>
@@ -40,8 +39,33 @@
                     <li>Оберіть <strong>Milestone</strong> з випадаючого меню.</li>
                 </ol>
 
-                <div class="my-8 text-center">
-                    
+                <!-- UI Мокап: Випадаюче меню -->
+                <div class="max-w-xs mx-auto bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden font-sans my-8">
+                    <div class="bg-gray-50 p-4 border-b border-gray-200 flex items-center justify-end">
+                        <div class="flex rounded-md shadow-sm">
+                            <button class="bg-[#4573D2] hover:bg-[#3B63B6] text-white px-4 py-1.5 rounded-l-md text-sm font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                                Add task
+                            </button>
+                            <button class="bg-[#4573D2] hover:bg-[#3B63B6] border-l border-[#3B63B6] text-white px-2 py-1.5 rounded-r-md text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md cursor-pointer flex items-center">
+                            <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Task
+                        </div>
+                        <div class="px-3 py-2 text-sm text-gray-900 bg-blue-50 rounded-md cursor-pointer flex items-center font-medium">
+                            <svg class="w-4 h-4 mr-3 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                            Milestone
+                        </div>
+                        <div class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md cursor-pointer flex items-center">
+                            <svg class="w-4 h-4 mr-3 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            Approval
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bg-gray-100 rounded-lg p-5 border-l-4 border-gray-400">
@@ -76,9 +100,52 @@
                     </li>
                 </ul>
 
-                <div class="my-8 text-center">
-                    
+                <!-- UI Мокап: Панель завдання із залежностями -->
+                <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-xl shadow-lg font-sans my-8 overflow-hidden">
+                    <div class="p-5 border-b border-gray-100">
+                        <h3 class="text-xl font-bold text-gray-800 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                            Фаза 1 Завершена
+                        </h3>
+                    </div>
+                    <div class="p-5 space-y-5">
+                        <div class="flex items-center text-sm">
+                            <span class="w-28 text-gray-500">Assignee</span>
+                            <div class="flex items-center font-medium text-gray-800">
+                                <div class="w-7 h-7 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs mr-2 font-bold">О</div>
+                                Олександр М.
+                            </div>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-28 text-gray-500">Due date</span>
+                            <span class="text-gray-800 font-medium px-2 py-1 hover:bg-gray-100 rounded cursor-pointer">Nov 15</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-28 text-gray-500">Projects</span>
+                            <span class="text-gray-800 bg-indigo-50 text-indigo-700 px-2 py-1 rounded text-xs font-medium">Новий Сайт Q4</span>
+                        </div>
+                        <div class="border-t border-gray-100 pt-5 text-sm">
+                            <div class="text-gray-500 mb-3 font-medium">Dependencies</div>
+                            <div class="bg-yellow-50/50 border border-yellow-200 rounded-lg p-3">
+                                <div class="text-[11px] text-yellow-700 font-bold uppercase tracking-wider mb-2 flex items-center">
+                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Waiting on (2)
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center text-gray-700 bg-white p-2 rounded border border-gray-100 shadow-sm">
+                                        <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
+                                        <span class="text-sm truncate">Перевірка багів на проді</span>
+                                    </div>
+                                    <div class="flex items-center text-gray-700 bg-white p-2 rounded border border-gray-100 shadow-sm">
+                                        <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
+                                        <span class="text-sm truncate">Підключення домену</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
             <!-- Крок 3 -->
@@ -101,9 +168,46 @@
                     </div>
                 </div>
 
-                <div class="my-8 text-center">
+                <!-- UI Мокап: Timeline -->
+                <div class="w-full mx-auto bg-white border border-gray-200 rounded-xl shadow-lg font-sans my-8 overflow-hidden text-left">
+                    <div class="bg-gray-50 border-b border-gray-200 flex text-xs text-gray-500 font-medium">
+                        <div class="w-1/3 p-3 border-r border-gray-200">Task name</div>
+                        <div class="w-2/3 flex">
+                            <div class="flex-1 p-3 text-center border-r border-gray-200">Nov 13</div>
+                            <div class="flex-1 p-3 text-center border-r border-gray-200">Nov 14</div>
+                            <div class="flex-1 p-3 text-center bg-blue-50/50 text-blue-700 font-bold border-r border-gray-200">Nov 15 (Сьогодні)</div>
+                        </div>
+                    </div>
                     
+                    <!-- Task -->
+                    <div class="flex border-b border-gray-100 items-center hover:bg-gray-50">
+                        <div class="w-1/3 p-3 text-sm text-gray-700 border-r border-gray-200 flex items-center">
+                            <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
+                            Перевірка багів
+                        </div>
+                        <div class="w-2/3 flex relative h-12 items-center">
+                            <div class="absolute left-[10%] right-[40%] top-3 bottom-3 bg-[#4573D2] rounded-full shadow-sm text-white text-[10px] flex items-center px-2"></div>
+                            <!-- Connection Line -->
+                            <div class="absolute left-[60%] top-1/2 w-[23%] border-t-2 border-gray-300 z-0"></div>
+                            <div class="absolute left-[80%] top-[35%] w-2 h-2 border-t-2 border-r-2 border-gray-300 transform rotate-45 z-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone -->
+                    <div class="flex border-b border-gray-100 items-center bg-green-50/30">
+                        <div class="w-1/3 p-3 text-sm text-gray-900 font-bold border-r border-gray-200 flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                            Фаза 1 Завершена
+                        </div>
+                        <div class="w-2/3 flex relative h-12 items-center">
+                            <!-- Diamond Icon -->
+                            <div class="absolute left-[81%] top-1 bottom-1 flex items-center justify-center z-10 bg-white rounded-full p-1 shadow-sm">
+                                <svg class="w-5 h-5 text-[#12A150] fill-current drop-shadow-md" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
             <!-- Приклади -->
