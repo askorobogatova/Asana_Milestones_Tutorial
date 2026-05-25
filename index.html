@@ -31,7 +31,7 @@
                     <span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
                     Створення Milestone
                 </h2>
-                <p class="mb-4 text-gray-700">Віху можна створити з нуля або перетворити на неї вже існуюче завдання, якщо ви зрозуміли, що воно є ключовим для проекту.</p>
+                <p class="mb-4 text-gray-700">Віху можна створити з нуля або перетворити на неї вже існуюче завдання, якщо ви зрозуміли, що воно є ключовим для проекту (наприклад, запуск нового ножа у виробництво).</p>
                 
                 <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-2 mb-6">
                     <li>Перейдіть у потрібний проект.</li>
@@ -79,24 +79,24 @@
                     <span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
                     Правильне оформлення Віхи
                 </h2>
-                <p class="mb-4 text-gray-700">Щоб віхи працювали на вас, їх потрібно правильно назвати та пов'язати з іншими завданнями.</p>
+                <p class="mb-4 text-gray-700">Щоб віхи працювали на вас, їх потрібно правильно назвати та пов'язати з іншими завданнями відділу.</p>
                 
                 <ul class="space-y-3 text-gray-700 ml-2 mb-6">
                     <li class="flex items-start">
                         <span class="text-amber-500 mr-2 mt-0.5">▪</span>
-                        <span><strong>Назва (Task Name):</strong> Називайте віху як доконаний факт або досягнуту ціль (наприклад, "Бета-версію випущено", "Дизайн затверджено", "Фаза 1 завершена").</span>
+                        <span><strong>Назва (Task Name):</strong> Називайте віху як доконаний факт або досягнуту ціль (наприклад, "Набір готовий до продажу", "Фото матеріали підготовлені").</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-amber-500 mr-2 mt-0.5">▪</span>
-                        <span><strong>Виконавець (Assignee):</strong> Зазвичай призначається на керівника проекту або ліда команди, який відповідає за цей етап.</span>
+                        <span><strong>Виконавець (Assignee):</strong> Зазвичай призначається на керівника проекту (наприклад, ліда R&D або керівника Контенту).</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-amber-500 mr-2 mt-0.5">▪</span>
-                        <span><strong>Дата виконання (Due Date):</strong> Цільова дата, до якої цей рубіж має бути пройдено.</span>
+                        <span><strong>Дата виконання (Due Date):</strong> Цільова дата, до якої цей етап розробки інструменту чи набору має бути завершено.</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-amber-500 mr-2 mt-0.5">▪</span>
-                        <span><strong>Залежності (Dependencies):</strong> Це <em>найважливіше</em>! Додайте всі завдання, які потрібно виконати, щоб досягти цієї віхи, у розділ "Waiting on" (Очікує на).</span>
+                        <span><strong>Залежності (Dependencies):</strong> Це <em>найважливіше</em>! Додайте всі завдання, які потрібно виконати, щоб досягти цієї віхи, у розділ "Waiting on" (Очікує на). Наприклад, віха "Набір готовий" очікує на "Дизайн коробки" та "Сценарій відеоуроку".</span>
                     </li>
                 </ul>
 
@@ -104,25 +104,25 @@
                 <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-xl shadow-lg font-sans my-8 overflow-hidden">
                     <div class="p-5 border-b border-gray-100">
                         <h3 class="text-xl font-bold text-gray-800 flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                            Фаза 1 Завершена
+                            <svg class="w-5 h-5 mr-2 text-[#12A150] fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                            Набір готовий до продажу
                         </h3>
                     </div>
                     <div class="p-5 space-y-5">
                         <div class="flex items-center text-sm">
                             <span class="w-28 text-gray-500">Assignee</span>
                             <div class="flex items-center font-medium text-gray-800">
-                                <div class="w-7 h-7 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs mr-2 font-bold">О</div>
-                                Олександр М.
+                                <img src="https://ui-avatars.com/api/?name=Olena&background=0D8ABC&color=fff&rounded=true" alt="Olena" class="w-7 h-7 rounded-full mr-2">
+                                Olena
                             </div>
                         </div>
                         <div class="flex items-center text-sm">
                             <span class="w-28 text-gray-500">Due date</span>
-                            <span class="text-gray-800 font-medium px-2 py-1 hover:bg-gray-100 rounded cursor-pointer">Nov 15</span>
+                            <span class="text-gray-800 font-medium px-2 py-1 hover:bg-gray-100 rounded cursor-pointer">Jun 1</span>
                         </div>
                         <div class="flex items-center text-sm">
                             <span class="w-28 text-gray-500">Projects</span>
-                            <span class="text-gray-800 bg-indigo-50 text-indigo-700 px-2 py-1 rounded text-xs font-medium">Новий Сайт Q4</span>
+                            <span class="text-gray-800 bg-indigo-50 text-indigo-700 px-2 py-1 rounded text-xs font-medium">DIY Набір: Canada...</span>
                         </div>
                         <div class="border-t border-gray-100 pt-5 text-sm">
                             <div class="text-gray-500 mb-3 font-medium">Dependencies</div>
@@ -134,18 +134,17 @@
                                 <div class="space-y-2">
                                     <div class="flex items-center text-gray-700 bg-white p-2 rounded border border-gray-100 shadow-sm">
                                         <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
-                                        <span class="text-sm truncate">Перевірка багів на проді</span>
+                                        <span class="text-sm truncate">ПЕРЕДАЧА У ВИРОБНИЦТВО...</span>
                                     </div>
                                     <div class="flex items-center text-gray-700 bg-white p-2 rounded border border-gray-100 shadow-sm">
                                         <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
-                                        <span class="text-sm truncate">Підключення домену</span>
+                                        <span class="text-sm truncate">ПЕРЕДАЧА МАРКЕТИНГУ...</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Крок 3 -->
@@ -158,87 +157,59 @@
                 
                 <div class="grid gap-4 mb-6 sm:grid-cols-2">
                     <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-5">
-                        <h4 class="font-bold text-indigo-700 mb-2">На вкладці Timeline</h4>
-                        <p class="text-sm text-gray-600">Віхи відображаються як зелені ромбики з лінією вниз. Це дозволяє команді візуально бачити дедлайни ключових фаз проекту, не заглиблюючись у сотні дрібних завдань.</p>
+                        <h4 class="font-bold text-indigo-700 mb-2">На вкладці Timeline (Проекти)</h4>
+                        <p class="text-sm text-gray-600">Віхи відображаються як зелені ромбики з лінією вниз. Це дозволяє команді R&D чи Контенту візуально бачити дедлайни ключових фаз (наприклад, "Stage 1: Concept", "Stage 5: Design"), не заглиблюючись у сотні дрібних завдань.</p>
                     </div>
                     
                     <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-5">
-                        <h4 class="font-bold text-indigo-700 mb-2">У розділі Portfolios (для керівників)</h4>
-                        <p class="text-sm text-gray-600">Топ-менеджмент може бачити статус усіх проектів компанії та найближчі віхи по кожному з них. Це дає "вид з гелікоптера" на здоров'я всього бізнесу.</p>
+                        <h4 class="font-bold text-indigo-700 mb-2">У Portfolios (Для керівництва)</h4>
+                        <p class="text-sm text-gray-600">Топ-менеджмент може бачити статус усіх R&D розробок BeaverCraft на одному екрані. Легко відстежити, які DIY набори чи сокири зараз "On track", а які відстають від графіку.</p>
                     </div>
                 </div>
 
-                <!-- UI Мокап: Timeline -->
-                <div class="w-full mx-auto bg-white border border-gray-200 rounded-xl shadow-lg font-sans my-8 overflow-hidden text-left">
-                    <div class="bg-gray-50 border-b border-gray-200 flex text-xs text-gray-500 font-medium">
-                        <div class="w-1/3 p-3 border-r border-gray-200">Task name</div>
-                        <div class="w-2/3 flex">
-                            <div class="flex-1 p-3 text-center border-r border-gray-200">Nov 13</div>
-                            <div class="flex-1 p-3 text-center border-r border-gray-200">Nov 14</div>
-                            <div class="flex-1 p-3 text-center bg-blue-50/50 text-blue-700 font-bold border-r border-gray-200">Nov 15 (Сьогодні)</div>
-                        </div>
-                    </div>
+                <!-- Реальні скріншоти користувача -->
+                <div class="mt-10 space-y-8">
+                    <figure class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <img src="Знімок екрана 2026-05-25 о 10.39.20.png" alt="Загальний вигляд Timeline для портфоліо R&D проектів" class="w-full rounded-lg shadow-md border border-gray-300">
+                        <figcaption class="text-center text-sm text-gray-600 mt-3 font-medium">Рис 1. Портфоліо "RnD Active". Керівництво бачить загальний прогрес розробки різних наборів та інструментів і ключові віхи по кожному з них.</figcaption>
+                    </figure>
                     
-                    <!-- Task -->
-                    <div class="flex border-b border-gray-100 items-center hover:bg-gray-50">
-                        <div class="w-1/3 p-3 text-sm text-gray-700 border-r border-gray-200 flex items-center">
-                            <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
-                            Перевірка багів
-                        </div>
-                        <div class="w-2/3 flex relative h-12 items-center">
-                            <div class="absolute left-[10%] right-[40%] top-3 bottom-3 bg-[#4573D2] rounded-full shadow-sm text-white text-[10px] flex items-center px-2"></div>
-                            <!-- Connection Line -->
-                            <div class="absolute left-[60%] top-1/2 w-[23%] border-t-2 border-gray-300 z-0"></div>
-                            <div class="absolute left-[80%] top-[35%] w-2 h-2 border-t-2 border-r-2 border-gray-300 transform rotate-45 z-0"></div>
-                        </div>
-                    </div>
-
-                    <!-- Milestone -->
-                    <div class="flex border-b border-gray-100 items-center bg-green-50/30">
-                        <div class="w-1/3 p-3 text-sm text-gray-900 font-bold border-r border-gray-200 flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                            Фаза 1 Завершена
-                        </div>
-                        <div class="w-2/3 flex relative h-12 items-center">
-                            <!-- Diamond Icon -->
-                            <div class="absolute left-[81%] top-1 bottom-1 flex items-center justify-center z-10 bg-white rounded-full p-1 shadow-sm">
-                                <svg class="w-5 h-5 text-[#12A150] fill-current drop-shadow-md" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                            </div>
-                        </div>
-                    </div>
+                    <figure class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <img src="Знімок екрана 2026-05-25 о 10.53.12.png" alt="Деталізований Timeline розробки DIY набору з залежностями" class="w-full rounded-lg shadow-md border border-gray-300">
+                        <figcaption class="text-center text-sm text-gray-600 mt-3 font-medium">Рис 2. Детальний Timeline проекту "DIY Набір: Canada". Чітко видно залежності (стрілочки) між створенням контенту, дизайном та фінальною віхою "Набір готовий до продажу".</figcaption>
+                    </figure>
                 </div>
-
             </section>
 
             <!-- Приклади -->
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-8 text-center">5 Змодельованих робочих ситуацій (Приклади)</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12 text-center">5 Змодельованих ситуацій для BeaverCraft</h2>
                 
                 <div class="space-y-6">
                     <!-- Приклад 1 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                         <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
                             <span class="text-amber-500 mr-2 text-xl">🔶</span>
-                            <h3 class="font-bold text-lg text-gray-800">Ситуація 1: Веб-розробка (Запуск нового сайту)</h3>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 1: Відділ R&D (Створення DIY набору)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Контекст:</strong> Проект триває 3 місяці і містить 150 завдань (дизайн, копірайт, розробка, тестування).</li>
-                                <li><strong>Як застосувати:</strong> Ви створюєте Milestone з назвою <strong>"MVP Сайту Запущено"</strong> на 15 листопада.</li>
-                                <li><strong>Механіка:</strong> Ви ставите всі фінальні завдання (наприклад, "Перевірка багів на проді", "Підключення домену") як залежності (Dependencies) для цієї віхи. Менеджер проекту відмічає Milestone як виконаний тільки тоді, коли сайт реально доступний користувачам.</li>
+                                <li><strong>Контекст:</strong> R&D відділ розробляє "DIY Набір: Canada (Maple Leaf Relief Carving Kit)". Процес має 6 стадій: від концепту до дизайну коробки та інструкцій.</li>
+                                <li><strong>Як застосувати:</strong> Ви створюєте фінальний Milestone: <strong>"Набір готовий до продажу"</strong>.</li>
+                                <li><strong>Механіка:</strong> Ця віха збирає в себе залежності від завдань "Передача у виробництво" та "Передача маркетингу". Поки дизайн буклету та коробки не затверджено, віха залишається відкритою, сигналізуючи, що продукт ще не можна пускати в продаж.</li>
                             </ul>
                             
-                            <!-- UI Mockup: List View Dependencies -->
+                            <!-- UI Mockup -->
                             <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 text-sm font-sans max-w-lg">
                                 <div class="flex items-center text-gray-800 font-medium mb-2">
                                     <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                    MVP Сайту Запущено
-                                    <span class="ml-auto text-gray-500 text-xs">Nov 15</span>
+                                    Набір готовий до продажу
+                                    <span class="ml-auto text-gray-500 text-xs">Jun 1</span>
                                 </div>
                                 <div class="ml-6 border-l-2 border-yellow-300 pl-3 space-y-2">
                                     <div class="text-[10px] text-yellow-600 font-bold uppercase tracking-wide">Waiting on (Очікує на)</div>
-                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> Перевірка багів на проді</div>
-                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> Підключення домену</div>
+                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> ПЕРЕДАЧА У ВИРОБНИЦТВО_DIY...</div>
+                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> ПЕРЕДАЧА МАРКЕТИНГУ_DIY...</div>
                                 </div>
                             </div>
                         </div>
@@ -248,26 +219,26 @@
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                         <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
                             <span class="text-amber-500 mr-2 text-xl">🔶</span>
-                            <h3 class="font-bold text-lg text-gray-800">Ситуація 2: Маркетинг (Підготовка до Чорної П'ятниці)</h3>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 2: Відділ Контенту (Amazon A+)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Контекст:</strong> Велика промо-кампанія, де задіяні дизайнери, таргетологи та копірайтери.</li>
-                                <li><strong>Як застосувати:</strong> Створюється Milestone: <strong>"Рекламні креативи та тексти готові"</strong>.</li>
-                                <li><strong>Механіка:</strong> Таргетолог не може почати налаштовувати кампанії в Facebook Ads, поки не отримає матеріали. Віха блокує (через залежності) старт його роботи. Коли арт-директор закриває віху, таргетолог отримує сповіщення: "Можна починати роботу".</li>
+                                <li><strong>Контекст:</strong> Відділу контенту замовили фото та відео для нової бушкрафт сокири (інфографіка, лайфстайл-фото в лісі).</li>
+                                <li><strong>Як застосувати:</strong> Створюється Milestone: <strong>"Фото та відео матеріали підготовлені"</strong>.</li>
+                                <li><strong>Механіка:</strong> Amazon-менеджер має завдання "Оновити A+ контент на лістингу". Це завдання блокується віхою контент-відділу. Як тільки ретушер закінчує обробку і закриває віху, менеджер Amazon отримує повідомлення, що можна завантажувати матеріали на сайт.</li>
                             </ul>
 
-                            <!-- UI Mockup: Task Blocked -->
+                            <!-- UI Mockup -->
                             <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 text-sm font-sans max-w-lg">
                                 <div class="flex items-center text-gray-800 font-medium mb-3">
                                     <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2"></div>
-                                    Налаштування кампанії в FB Ads
+                                    Оновити A+ контент для сокири
                                 </div>
                                 <div class="bg-yellow-50 rounded p-2 flex items-center border border-yellow-100">
                                     <svg class="w-4 h-4 text-yellow-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                     <span class="text-gray-600 text-xs mr-1">Blocked by:</span>
                                     <svg class="w-3 h-3 mx-1 text-[#12A150] fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                    <span class="text-gray-800 text-xs font-medium truncate">Рекламні креативи та тексти готові</span>
+                                    <span class="text-gray-800 text-xs font-medium truncate">Фото та відео матеріали підготовлені</span>
                                 </div>
                             </div>
                         </div>
@@ -277,27 +248,26 @@
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                         <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
                             <span class="text-amber-500 mr-2 text-xl">🔶</span>
-                            <h3 class="font-bold text-lg text-gray-800">Ситуація 3: Організація івентів (Конференція)</h3>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 3: Відділ Маркетингу (SMM & Promo)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Контекст:</strong> Підготовка до офлайн-заходу на 500 осіб.</li>
-                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Локацію заброньовано та оплачено"</strong>.</li>
-                                <li><strong>Механіка:</strong> Пошук приміщення, переговори та підписання договору — це звичайні завдання. А сам факт успішної фіксації залу — це віха. Керівництво, зайшовши в проект, одразу бачить: локація є, можна запускати продаж квитків.</li>
+                                <li><strong>Контекст:</strong> Планується великий розпродаж ножів для карвінгу до Дня Батька в соцмережах (Instagram, FB).</li>
+                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Промо-матеріали затверджено та опубліковано"</strong>.</li>
+                                <li><strong>Механіка:</strong> Створення reels, написання постів, налаштування таргету — це звичайні завдання. А день, коли всі ці елементи стартують — це віха. Керівництво бачить цей ромбик на Timeline і знає: "Сьогодні пішов трафік".</li>
                             </ul>
 
-                            <!-- UI Mockup: Board Card (Done) -->
-                            <div class="mt-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-3 font-sans w-64 mx-auto sm:mx-0">
-                                <div class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Done</div>
-                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
-                                    <div class="flex items-start">
-                                        <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current mt-0.5 flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                        <span class="text-sm font-medium text-gray-800 leading-tight">Локацію заброньовано та оплачено</span>
-                                    </div>
-                                    <div class="mt-3 flex items-center justify-between text-xs text-gray-500">
-                                        <div class="w-5 h-5 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-[10px]">А</div>
-                                        <span class="text-[#12A150] font-medium bg-green-50 px-2 py-0.5 rounded">Completed</span>
-                                    </div>
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-[#F9FBE7] border border-[#E4EBA1] rounded-lg shadow-sm p-4 font-sans flex items-center max-w-lg">
+                                <div class="w-10 h-10 rounded-full bg-[#12A150] flex items-center justify-center mr-4 shadow-sm flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-sm flex items-center">
+                                        <svg class="w-4 h-4 mr-1 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        Промо до Дня Батька запущено
+                                    </h4>
+                                    <p class="text-xs text-gray-600 mt-1">Marked complete by <span class="font-medium">SMM Lead</span> on Jun 10.</p>
                                 </div>
                             </div>
                         </div>
@@ -307,33 +277,26 @@
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                         <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
                             <span class="text-amber-500 mr-2 text-xl">🔶</span>
-                            <h3 class="font-bold text-lg text-gray-800">Ситуація 4: HR та рекрутинг (Онбординг працівника)</h3>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 4: Рітейл (Etsy, Shopify, Allegro)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Контекст:</strong> Новий співробітник проходить 3-місячний випробувальний термін.</li>
-                                <li><strong>Як застосувати:</strong> Створюються 3 віхи в проекті онбордингу: <strong>"Місяць 1: Навчання пройдено"</strong>, <strong>"Місяць 2: Перший самостійний проект"</strong> та <strong>"Місяць 3: Випробувальний термін успішно закрито"</strong>.</li>
-                                <li><strong>Механіка:</strong> HR чітко бачить дати (due dates) кожної віхи. За 3 дні до віхи "Місяць 3" автоматично створюється завдання для ліда "Провести фінальне рев'ю з новачком".</li>
+                                <li><strong>Контекст:</strong> Підготовка інтернет-магазинів до різдвяного сезону (оновлення банерів, додавання святкових наборів, переклад лістингів для Allegro).</li>
+                                <li><strong>Як застосувати:</strong> Створюється Milestone: <strong>"Магазини готові до Різдвяного сезону"</strong>.</li>
+                                <li><strong>Механіка:</strong> Віха розміщується на початку листопада. Вона акумулює в собі роботу дизайнерів (банери), копірайтерів (SEO) та перекладачів. Керівник відділу рітейлу наочно бачить, до якої дати всі магазини BeaverCraft мають бути переведені в "святковий режим".</li>
                             </ul>
 
-                            <!-- UI Mockup: Milestone List -->
-                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-0 font-sans overflow-hidden max-w-lg">
-                                <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 text-xs font-bold text-gray-500 uppercase tracking-wider">Milestones (Віхи)</div>
-                                <div class="divide-y divide-gray-100">
-                                    <div class="p-3 flex items-center hover:bg-gray-50">
-                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                        <span class="text-sm text-gray-800">Місяць 1: Навчання пройдено</span>
-                                        <span class="ml-auto text-xs text-gray-500">Oct 1</span>
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-3 font-sans w-72 mx-auto sm:mx-0">
+                                <div class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Done</div>
+                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
+                                    <div class="flex items-start">
+                                        <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current mt-0.5 flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm font-medium text-gray-800 leading-tight">Магазини готові до Різдвяного сезону</span>
                                     </div>
-                                    <div class="p-3 flex items-center hover:bg-gray-50">
-                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                        <span class="text-sm text-gray-800">Місяць 2: Перший самостійний проект</span>
-                                        <span class="ml-auto text-xs text-gray-500">Nov 1</span>
-                                    </div>
-                                    <div class="p-3 flex items-center hover:bg-gray-50">
-                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                        <span class="text-sm text-gray-800">Місяць 3: Випробувальний термін закрито</span>
-                                        <span class="ml-auto text-xs text-gray-500">Dec 1</span>
+                                    <div class="mt-3 flex items-center justify-between text-xs text-gray-500">
+                                        <img src="https://ui-avatars.com/api/?name=Retail&background=0D8ABC&color=fff&rounded=true" alt="User" class="w-5 h-5 rounded-full">
+                                        <span class="text-[#12A150] font-medium bg-green-50 px-2 py-0.5 rounded">Completed</span>
                                     </div>
                                 </div>
                             </div>
@@ -344,26 +307,34 @@
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                         <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
                             <span class="text-amber-500 mr-2 text-xl">🔶</span>
-                            <h3 class="font-bold text-lg text-gray-800">Ситуація 5: Відділ продажу (Виконання плану)</h3>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 5: Відділ Amazon (Лонч нового товару)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Контекст:</strong> Команда має квартальний план продажів у $100,000.</li>
-                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Квартальний план Q3 виконано (100k)"</strong>.</li>
-                                <li><strong>Механіка:</strong> Віха не має конкретних "попередніх завдань", але висить у проекті відділу з дедлайном 30 вересня. Коли план виконано (навіть достроково), віху урочисто закривають, що сигналізує компанії про досягнення KPI та нарахування бонусів команді.</li>
+                                <li><strong>Контекст:</strong> BeaverCraft запускає нові захисні рукавиці для карвінгу на Amazon US. Це тривалий процес (доставка на склади FBA, налаштування PPC кампаній).</li>
+                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Товар доступний до замовлення на Amazon (In Stock)"</strong>.</li>
+                                <li><strong>Механіка:</strong> Всі завдання логістики та налаштування лістингу ведуть до цієї віхи. Коли товар стає доступним на складі Amazon, віха закривається. Це автоматично сигналізує відділу маркетингу про те, що можна починати вести зовнішній трафік (з YouTube, соцмереж) на цей лістинг.</li>
                             </ul>
 
-                            <!-- UI Mockup: Completed Milestone Banner -->
-                            <div class="mt-4 bg-[#F9FBE7] border border-[#E4EBA1] rounded-lg shadow-sm p-4 font-sans flex items-center max-w-lg">
-                                <div class="w-10 h-10 rounded-full bg-[#12A150] flex items-center justify-center mr-4 shadow-sm flex-shrink-0">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800 text-sm flex items-center">
-                                        <svg class="w-4 h-4 mr-1 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
-                                        Квартальний план Q3 виконано (100k)
-                                    </h4>
-                                    <p class="text-xs text-gray-600 mt-1">Marked complete by <span class="font-medium">Лід відділу</span> on Sep 28.</p>
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-0 font-sans overflow-hidden max-w-lg">
+                                <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 text-xs font-bold text-gray-500 uppercase tracking-wider">Milestones (Amazon Лонч)</div>
+                                <div class="divide-y divide-gray-100">
+                                    <div class="p-3 flex items-center hover:bg-gray-50">
+                                        <svg class="w-4 h-4 mr-3 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-800 line-through">Лістинг створено</span>
+                                        <span class="ml-auto text-xs text-gray-500">Aug 15</span>
+                                    </div>
+                                    <div class="p-3 flex items-center hover:bg-gray-50">
+                                        <svg class="w-4 h-4 mr-3 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-800 line-through">Товар відправлено на склади FBA</span>
+                                        <span class="ml-auto text-xs text-gray-500">Sep 5</span>
+                                    </div>
+                                    <div class="p-3 flex items-center hover:bg-gray-50 bg-blue-50/30 border-l-2 border-blue-500">
+                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-900 font-bold">Товар доступний (In Stock)</span>
+                                        <span class="ml-auto text-xs font-bold text-blue-600">Oct 10</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +348,7 @@
                     <span class="text-2xl mr-2">🎯</span> Головне правило Віх:
                 </h4>
                 <p class="text-indigo-900">
-                    Не робіть кожне друге завдання віхою. На один великий проект (тривалістю 1-2 місяці) повинно припадати <strong>не більше 3-5 віх</strong>. Якщо їх забагато, вони втрачають свою цінність як індикатори ключового прогресу.
+                    Не робіть кожне друге завдання віхою. На один великий проект (наприклад, розробку одного DIY набору) повинно припадати <strong>не більше 3-5 віх</strong>. Якщо їх забагато, вони втрачають свою цінність як індикатори ключового прогресу.
                 </p>
             </div>
 
