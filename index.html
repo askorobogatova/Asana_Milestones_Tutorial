@@ -227,6 +227,20 @@
                                 <li><strong>Як застосувати:</strong> Ви створюєте Milestone з назвою <strong>"MVP Сайту Запущено"</strong> на 15 листопада.</li>
                                 <li><strong>Механіка:</strong> Ви ставите всі фінальні завдання (наприклад, "Перевірка багів на проді", "Підключення домену") як залежності (Dependencies) для цієї віхи. Менеджер проекту відмічає Milestone як виконаний тільки тоді, коли сайт реально доступний користувачам.</li>
                             </ul>
+                            
+                            <!-- UI Mockup: List View Dependencies -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 text-sm font-sans max-w-lg">
+                                <div class="flex items-center text-gray-800 font-medium mb-2">
+                                    <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                    MVP Сайту Запущено
+                                    <span class="ml-auto text-gray-500 text-xs">Nov 15</span>
+                                </div>
+                                <div class="ml-6 border-l-2 border-yellow-300 pl-3 space-y-2">
+                                    <div class="text-[10px] text-yellow-600 font-bold uppercase tracking-wide">Waiting on (Очікує на)</div>
+                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> Перевірка багів на проді</div>
+                                    <div class="flex items-center text-gray-600"><div class="w-3 h-3 rounded-full border-2 border-gray-300 mr-2"></div> Підключення домену</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -242,6 +256,20 @@
                                 <li><strong>Як застосувати:</strong> Створюється Milestone: <strong>"Рекламні креативи та тексти готові"</strong>.</li>
                                 <li><strong>Механіка:</strong> Таргетолог не може почати налаштовувати кампанії в Facebook Ads, поки не отримає матеріали. Віха блокує (через залежності) старт його роботи. Коли арт-директор закриває віху, таргетолог отримує сповіщення: "Можна починати роботу".</li>
                             </ul>
+
+                            <!-- UI Mockup: Task Blocked -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 text-sm font-sans max-w-lg">
+                                <div class="flex items-center text-gray-800 font-medium mb-3">
+                                    <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2"></div>
+                                    Налаштування кампанії в FB Ads
+                                </div>
+                                <div class="bg-yellow-50 rounded p-2 flex items-center border border-yellow-100">
+                                    <svg class="w-4 h-4 text-yellow-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span class="text-gray-600 text-xs mr-1">Blocked by:</span>
+                                    <svg class="w-3 h-3 mx-1 text-[#12A150] fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                    <span class="text-gray-800 text-xs font-medium truncate">Рекламні креативи та тексти готові</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -257,6 +285,21 @@
                                 <li><strong>Як застосувати:</strong> Milestone: <strong>"Локацію заброньовано та оплачено"</strong>.</li>
                                 <li><strong>Механіка:</strong> Пошук приміщення, переговори та підписання договору — це звичайні завдання. А сам факт успішної фіксації залу — це віха. Керівництво, зайшовши в проект, одразу бачить: локація є, можна запускати продаж квитків.</li>
                             </ul>
+
+                            <!-- UI Mockup: Board Card (Done) -->
+                            <div class="mt-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-3 font-sans w-64 mx-auto sm:mx-0">
+                                <div class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Done</div>
+                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
+                                    <div class="flex items-start">
+                                        <svg class="w-4 h-4 mr-2 text-[#12A150] fill-current mt-0.5 flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm font-medium text-gray-800 leading-tight">Локацію заброньовано та оплачено</span>
+                                    </div>
+                                    <div class="mt-3 flex items-center justify-between text-xs text-gray-500">
+                                        <div class="w-5 h-5 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-[10px]">А</div>
+                                        <span class="text-[#12A150] font-medium bg-green-50 px-2 py-0.5 rounded">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -272,6 +315,28 @@
                                 <li><strong>Як застосувати:</strong> Створюються 3 віхи в проекті онбордингу: <strong>"Місяць 1: Навчання пройдено"</strong>, <strong>"Місяць 2: Перший самостійний проект"</strong> та <strong>"Місяць 3: Випробувальний термін успішно закрито"</strong>.</li>
                                 <li><strong>Механіка:</strong> HR чітко бачить дати (due dates) кожної віхи. За 3 дні до віхи "Місяць 3" автоматично створюється завдання для ліда "Провести фінальне рев'ю з новачком".</li>
                             </ul>
+
+                            <!-- UI Mockup: Milestone List -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-0 font-sans overflow-hidden max-w-lg">
+                                <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 text-xs font-bold text-gray-500 uppercase tracking-wider">Milestones (Віхи)</div>
+                                <div class="divide-y divide-gray-100">
+                                    <div class="p-3 flex items-center hover:bg-gray-50">
+                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-800">Місяць 1: Навчання пройдено</span>
+                                        <span class="ml-auto text-xs text-gray-500">Oct 1</span>
+                                    </div>
+                                    <div class="p-3 flex items-center hover:bg-gray-50">
+                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-800">Місяць 2: Перший самостійний проект</span>
+                                        <span class="ml-auto text-xs text-gray-500">Nov 1</span>
+                                    </div>
+                                    <div class="p-3 flex items-center hover:bg-gray-50">
+                                        <svg class="w-4 h-4 mr-3 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        <span class="text-sm text-gray-800">Місяць 3: Випробувальний термін закрито</span>
+                                        <span class="ml-auto text-xs text-gray-500">Dec 1</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -287,6 +352,20 @@
                                 <li><strong>Як застосувати:</strong> Milestone: <strong>"Квартальний план Q3 виконано (100k)"</strong>.</li>
                                 <li><strong>Механіка:</strong> Віха не має конкретних "попередніх завдань", але висить у проекті відділу з дедлайном 30 вересня. Коли план виконано (навіть достроково), віху урочисто закривають, що сигналізує компанії про досягнення KPI та нарахування бонусів команді.</li>
                             </ul>
+
+                            <!-- UI Mockup: Completed Milestone Banner -->
+                            <div class="mt-4 bg-[#F9FBE7] border border-[#E4EBA1] rounded-lg shadow-sm p-4 font-sans flex items-center max-w-lg">
+                                <div class="w-10 h-10 rounded-full bg-[#12A150] flex items-center justify-center mr-4 shadow-sm flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-sm flex items-center">
+                                        <svg class="w-4 h-4 mr-1 text-[#12A150] fill-current" viewBox="0 0 24 24"><path d="M12 2L22 12L12 22L2 12L12 2Z"></path></svg>
+                                        Квартальний план Q3 виконано (100k)
+                                    </h4>
+                                    <p class="text-xs text-gray-600 mt-1">Marked complete by <span class="font-medium">Лід відділу</span> on Sep 28.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
