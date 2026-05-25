@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туторіал з використання Milestones в Asana</title>
+    <!-- Підключення Tailwind CSS для стилізації -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Додаткові базові стилі для кращої типографіки */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased line-height-relaxed">
+
+    <main class="max-w-4xl mx-auto py-10 px-6 sm:px-8 bg-white shadow-xl my-10 rounded-2xl border border-gray-100">
+        
+        <!-- Заголовок -->
+        <header class="mb-10 text-center">
+            <div class="inline-block bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold tracking-wide mb-4">Короткий посібник</div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Як використовувати Milestones (Віхи) в Asana</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                <strong>Milestone (Віха)</strong> — це ключовий маркер у проекті, що означає завершення важливого етапу або досягнення великої мети. На відміну від звичайного завдання, віха не є "роботою, яку треба зробити" — це точка в часі, яка показує прогрес. В Asana вони позначаються спеціальним значком ромба 🔶.
+            </p>
+        </header>
+
+        <div class="space-y-12">
+            
+            <!-- Крок 1 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-amber-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
+                    Створення Milestone
+                </h2>
+                <p class="mb-4 text-gray-700">Віху можна створити з нуля або перетворити на неї вже існуюче завдання, якщо ви зрозуміли, що воно є ключовим для проекту.</p>
+                
+                <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-2 mb-6">
+                    <li>Перейдіть у потрібний проект.</li>
+                    <li>Натисніть стрілочку поруч із кнопкою <strong>Add Task (Додати завдання)</strong>.</li>
+                    <li>Оберіть <strong>Milestone</strong> з випадаючого меню.</li>
+                </ol>
+
+                <!-- Плейсхолдер 1 -->
+                <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center mb-6">
+                    <p class="text-sm text-gray-500 font-medium">Вставте сюди скріншот: Випадаюче меню кнопки "Add task" з виділеним пунктом "Milestone" (іконка ромба)</p>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-5 border-l-4 border-gray-400">
+                    <p class="text-gray-700"><strong>Альтернативний спосіб:</strong> Відкрийте звичайне завдання, натисніть на іконку <strong>три крапки</strong> (More actions) у правому верхньому куті, виберіть <strong>Mark as... (Позначити як...)</strong> і далі <strong>Milestone</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Крок 2 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-amber-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+                    Правильне оформлення Віхи
+                </h2>
+                <p class="mb-4 text-gray-700">Щоб віхи працювали на вас, їх потрібно правильно назвати та пов'язати з іншими завданнями.</p>
+                
+                <ul class="space-y-3 text-gray-700 ml-2 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-amber-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Назва (Task Name):</strong> Називайте віху як доконаний факт або досягнуту ціль (наприклад, "Бета-версію випущено", "Дизайн затверджено", "Фаза 1 завершена").</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Виконавець (Assignee):</strong> Зазвичай призначається на керівника проекту або ліда команди, який відповідає за цей етап.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Дата виконання (Due Date):</strong> Цільова дата, до якої цей рубіж має бути пройдено.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Залежності (Dependencies):</strong> Це <em>найважливіше</em>! Додайте всі завдання, які потрібно виконати, щоб досягти цієї віхи, у розділ "Waiting on" (Очікує на).</span>
+                    </li>
+                </ul>
+
+                <!-- Плейсхолдер 2 -->
+                <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+                    <p class="text-sm text-gray-500 font-medium">Вставте сюди скріншот: Відкрита панель Milestone, де видно її назву, відповідального та блок Dependencies (залежностей)</p>
+                </div>
+            </section>
+
+            <!-- Крок 3 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-amber-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+                    Відстеження на Timeline та Portfolio
+                </h2>
+                <p class="mb-4 text-gray-700">Головна суперсила Milestones розкривається на <strong>Timeline (Шкалі часу)</strong> та в <strong>Portfolios (Портфоліо)</strong>.</p>
+                
+                <div class="grid gap-4 mb-6 sm:grid-cols-2">
+                    <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-5">
+                        <h4 class="font-bold text-indigo-700 mb-2">На вкладці Timeline</h4>
+                        <p class="text-sm text-gray-600">Віхи відображаються як зелені ромбики з лінією вниз. Це дозволяє команді візуально бачити дедлайни ключових фаз проекту, не заглиблюючись у сотні дрібних завдань.</p>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-5">
+                        <h4 class="font-bold text-indigo-700 mb-2">У розділі Portfolios (для керівників)</h4>
+                        <p class="text-sm text-gray-600">Топ-менеджмент може бачити статус усіх проектів компанії та найближчі віхи по кожному з них. Це дає "вид з гелікоптера" на здоров'я всього бізнесу.</p>
+                    </div>
+                </div>
+
+                <!-- Плейсхолдер 3 -->
+                <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+                    <p class="text-sm text-gray-500 font-medium">Вставте сюди скріншот: Вкладка Timeline в Asana, де чітко видно завдання, з'єднані лініями з ромбиком Milestone</p>
+                </div>
+            </section>
+
+            <!-- Приклади -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-8 text-center">5 Змодельованих робочих ситуацій (Приклади)</h2>
+                
+                <div class="space-y-6">
+                    <!-- Приклад 1 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-amber-500 mr-2 text-xl">🔶</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 1: Веб-розробка (Запуск нового сайту)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Контекст:</strong> Проект триває 3 місяці і містить 150 завдань (дизайн, копірайт, розробка, тестування).</li>
+                                <li><strong>Як застосувати:</strong> Ви створюєте Milestone з назвою <strong>"MVP Сайту Запущено"</strong> на 15 листопада.</li>
+                                <li><strong>Механіка:</strong> Ви ставите всі фінальні завдання (наприклад, "Перевірка багів на проді", "Підключення домену") як залежності (Dependencies) для цієї віхи. Менеджер проекту відмічає Milestone як виконаний тільки тоді, коли сайт реально доступний користувачам.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 2 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-amber-500 mr-2 text-xl">🔶</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 2: Маркетинг (Підготовка до Чорної П'ятниці)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Контекст:</strong> Велика промо-кампанія, де задіяні дизайнери, таргетологи та копірайтери.</li>
+                                <li><strong>Як застосувати:</strong> Створюється Milestone: <strong>"Рекламні креативи та тексти готові"</strong>.</li>
+                                <li><strong>Механіка:</strong> Таргетолог не може почати налаштовувати кампанії в Facebook Ads, поки не отримає матеріали. Віха блокує (через залежності) старт його роботи. Коли арт-директор закриває віху, таргетолог отримує сповіщення: "Можна починати роботу".</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 3 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-amber-500 mr-2 text-xl">🔶</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 3: Організація івентів (Конференція)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Контекст:</strong> Підготовка до офлайн-заходу на 500 осіб.</li>
+                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Локацію заброньовано та оплачено"</strong>.</li>
+                                <li><strong>Механіка:</strong> Пошук приміщення, переговори та підписання договору — це звичайні завдання. А сам факт успішної фіксації залу — це віха. Керівництво, зайшовши в проект, одразу бачить: локація є, можна запускати продаж квитків.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 4 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-amber-500 mr-2 text-xl">🔶</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 4: HR та рекрутинг (Онбординг працівника)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Контекст:</strong> Новий співробітник проходить 3-місячний випробувальний термін.</li>
+                                <li><strong>Як застосувати:</strong> Створюються 3 віхи в проекті онбордингу: <strong>"Місяць 1: Навчання пройдено"</strong>, <strong>"Місяць 2: Перший самостійний проект"</strong> та <strong>"Місяць 3: Випробувальний термін успішно закрито"</strong>.</li>
+                                <li><strong>Механіка:</strong> HR чітко бачить дати (due dates) кожної віхи. За 3 дні до віхи "Місяць 3" автоматично створюється завдання для ліда "Провести фінальне рев'ю з новачком".</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 5 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-amber-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-amber-500 mr-2 text-xl">🔶</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 5: Відділ продажу (Виконання плану)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Контекст:</strong> Команда має квартальний план продажів у $100,000.</li>
+                                <li><strong>Як застосувати:</strong> Milestone: <strong>"Квартальний план Q3 виконано (100k)"</strong>.</li>
+                                <li><strong>Механіка:</strong> Віха не має конкретних "попередніх завдань", але висить у проекті відділу з дедлайном 30 вересня. Коли план виконано (навіть достроково), віху урочисто закривають, що сигналізує компанії про досягнення KPI та нарахування бонусів команді.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Порада -->
+            <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-6 shadow-sm">
+                <h4 class="flex items-center text-indigo-800 font-bold text-lg mb-2">
+                    <span class="text-2xl mr-2">🎯</span> Головне правило Віх:
+                </h4>
+                <p class="text-indigo-900">
+                    Не робіть кожне друге завдання віхою. На один великий проект (тривалістю 1-2 місяці) повинно припадати <strong>не більше 3-5 віх</strong>. Якщо їх забагато, вони втрачають свою цінність як індикатори ключового прогресу.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
